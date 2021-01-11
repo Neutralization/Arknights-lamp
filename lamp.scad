@@ -1,0 +1,171 @@
+translate([0,0,21.5]){
+    difference(){
+        cylinder(r=32, h=40, $fn=6, center=true);
+        cylinder(r=30.5, h=42, $fn=6, center=true);
+    }
+}
+difference(){
+    translate([0,0,0.5]){
+        color([0.2,0.2,0.2]){
+            cylinder(r=32, h=2, $fn=6, center=true);
+        }
+    }
+    union(){
+        translate([0,-5,0]){
+            rotate([0,0,-45]){
+                union(){
+                    translate([9,18,5]){
+                        rotate([0,0,0]){
+                            color([0.2,0.4,0.2]){
+                                cube([6,2,10],center=true);
+                            }
+                        }
+                    }
+                    translate([11,16,5]){
+                        rotate([0,0,90]){
+                            color([0.2,0.4,0.2]){
+                                cube([6,2,10],center=true);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        translate([0,-5,0]){
+            rotate([0,0,45]){
+                union(){
+                    translate([-9,18,5]){
+                        rotate([0,0,0]){
+                            color([0.2,0.4,0.2]){
+                                cube([6,2,10],center=true);
+                            }
+                        }
+                    }
+                    translate([-11,16,5]){
+                        rotate([0,0,90]){
+                            color([0.2,0.4,0.2]){
+                                cube([6,2,10],center=true);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        translate([9,18,5]){
+            rotate([0,0,0]){
+                color([0.2,0.4,0.2]){
+                    cube([6,2,10],center=true);
+                }
+            }
+        }
+        translate([11,16,5]){
+            rotate([0,0,90]){
+                color([0.2,0.4,0.2]){
+                    cube([6,2,10],center=true);
+                }
+            }
+        }
+
+        translate([9,-18,5]){
+            rotate([0,0,0]){
+                color([0.2,0.4,0.2]){
+                    cube([6,2,10],center=true);
+                }
+            }
+        }
+        translate([11,-16,5]){
+            rotate([0,0,90]){
+                color([0.2,0.4,0.2]){
+                    cube([6,2,10],center=true);
+                }
+            }
+        }
+
+        translate([-9,18,5]){
+            rotate([0,0,0]){
+                color([0.2,0.4,0.2]){
+                    cube([6,2,10],center=true);
+                }
+            }
+        }
+        translate([-11,16,5]){
+            rotate([0,0,90]){
+                color([0.2,0.4,0.2]){
+                    cube([6,2,10],center=true);
+                }
+            }
+        }
+
+        translate([-9,-18,5]){
+            rotate([0,0,0]){
+                color([0.2,0.4,0.2]){
+                    cube([6,2,10],center=true);
+                }
+            }
+        }
+        translate([-11,-16,5]){
+            rotate([0,0,90]){
+                color([0.2,0.4,0.2]){
+                    cube([6,2,10],center=true);
+                }
+            }
+        }
+        difference(){
+            union(){
+                translate([0,0,5]){
+                    rotate([0,0,60]){
+                        cube([6,42,10],center=true);
+                    }
+                }
+                translate([0,0,5]){
+                    rotate([0,0,-60]){
+                        cube([6,42,10],center=true);
+                    }
+                }
+                translate([0,0,5]){
+                    rotate([0,0,0]){
+                        cube([6,42,10],center=true);
+                    }
+                }
+            }
+            union(){
+                rotate([0,0,0]){
+                    translate([3,1.7,-1]){
+                        color([0.4,0.2,0.2]){
+                            cube([3, 19.3, 10]);
+                        }
+                    }
+                    translate([-6,1.7,-1]){
+                        color([0.4,0.2,0.2]){
+                            cube([3, 19.3, 10]);
+                        }
+                    }
+                }
+                rotate([0,0,120]){
+                    translate([3,1.7,-1]){
+                        color([0.4,0.2,0.2]){
+                            cube([3, 19.3, 10]);
+                        }
+                    }
+                    translate([-6,1.7,-1]){
+                        color([0.4,0.2,0.2]){
+                            cube([3, 19.3, 10]);
+                        }
+                    }
+                }
+                rotate([0,0,-120]){
+                    translate([3,1.7,-1]){
+                        color([0.4,0.2,0.2]){
+                            cube([3, 19.3, 10]);
+                        }
+                    }
+                    translate([-6,1.7,-1]){
+                        color([0.4,0.2,0.2]){
+                            cube([3, 19.3, 10]);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
